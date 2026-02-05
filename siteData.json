@@ -41,13 +41,16 @@
       "headings": {
         "simple-placeholders-variable-interpolation": "Simple Placeholders (Variable Interpolation)",
         "usage": "Usage",
-        "1-define-the-placeholder": "1. Define the Placeholder",
-        "2-use-the-placeholder": "2. Use the placeholder",
+        "add-the-placeholder-configuration": "Add the Placeholder Configuration",
+        "use-the-placeholder": "Use the placeholder",
         "inline-fallback": "Inline Fallback",
+        "html-attribute-interpolation": "HTML Attribute Interpolation",
         "escaping-syntax": "Escaping Syntax",
-        "component-attributes": "Component Attributes",
-        "persistence": "Persistence",
-        "future-implementations": "Future Implementations?"
+        "inline-editing-of-placeholders": "Inline Editing of Placeholders",
+        "placeholder-input-attributes": "Placeholder-Input Attributes",
+        "placeholder-configuration": "Placeholder Configuration",
+        "tab-group-binding-and-amp-integration": "Tab Group Binding &amp; Integration",
+        "persistence": "Persistence"
       },
       "headingKeywords": {}
     },
@@ -56,11 +59,15 @@
       "title": "CustomViews - Settings",
       "headings": {
         "settings-dialog": "Settings Dialog",
-        "intro-callout": "Intro Callout",
-        "conditional-section-display": "Conditional Section Display",
+        "settings-icon-trigger": "Settings Icon Trigger",
+        "intro-popup-for-icon-trigger": "Intro Popup for Icon Trigger",
+        "opening-via-link": "Opening via Link",
+        "hash-trigger-recommended": "Hash Trigger (Recommended)",
+        "query-parameter": "Query Parameter",
+        "adaptive-display": "Adaptive Display",
         "configuration": "Configuration",
         "settings-options": "Settings Options",
-        "integration-with-toggles-and-tabs": "Integration with Toggles and Tabs"
+        "integration": "Integration"
       },
       "headingKeywords": {}
     },
@@ -68,17 +75,17 @@
       "src": "authorGuide/components/share.md",
       "title": "Author Guide - Sharing",
       "headings": {
-        "share-mode-and-amp-focus-view": "Share Mode &amp; Focus View",
-        "sharing-content": "Sharing Content",
-        "1-activating-share-mode": "1. Activating Share Mode",
-        "2-selecting-elements": "2. Selecting Elements",
-        "3-choosing-a-mode": "3. Choosing a Mode",
-        "4-smart-selection-guidelines": "4. Smart Selection Guidelines",
-        "5-generating-the-link": "5. Generating the Link",
-        "exiting": "Exiting",
-        "manual-url-construction": "Manual URL Construction",
-        "focus-view-recipient-experience": "Focus View (Recipient Experience)",
-        "customizing-share-behavior-to-refine": "Customizing Share Behavior ( TO REFINE )"
+        "focused-views": "Focused Views",
+        "share-mode": "Share Mode",
+        "types-of-sharing": "Types of Sharing",
+        "toggling-share-mode": "Toggling Share Mode",
+        "selecting-elements": "Selecting Elements",
+        "generating-share-link": "Generating Share Link",
+        "exiting-share-mode": "Exiting Share Mode",
+        "focus-mode": "Focus Mode",
+        "configurations": "Configurations",
+        "using-customviews-without-the-settings-dialog": "Using CustomViews without the Settings Dialog",
+        "customizing-share-behavior-wip": "Customizing Share Behavior ( WIP )"
       },
       "headingKeywords": {}
     },
@@ -102,6 +109,7 @@
         "cv-tab-body-attributes": "&lt;cv-tab-body&gt; Attributes",
         "configuration": "Configuration",
         "json-configuration-option-types": "JSON Configuration Option Types",
+        "binding-to-placeholders": "Binding to Placeholders",
         "global-vs-local-tab-groups": "Global vs. Local Tab Groups",
         "defining-local-components": "Defining Local Components"
       },
@@ -133,9 +141,6 @@
         "basic-structure": "Basic Structure",
         "summary-of-configuration-options": "Summary of Configuration Options",
         "core-configuration-config": "Core Configuration (config)",
-        "tab-group-configuration": "Tab Group Configuration",
-        "toggles-configuration": "Toggles Configuration",
-        "default-state-behavior": "Default State Behavior",
         "global-options": "Global Options",
         "settings-configuration-settings": "Settings Configuration (settings)",
         "script-tag-attributes": "Script Tag Attributes",
@@ -165,11 +170,18 @@
       "title": "Installation (MarkBind Setup)",
       "headings": {
         "setting-up-customviews-in-a-markbind-site": "Setting up CustomViews in a MarkBind Site",
-        "1-create-the-plugin-file": "1. Create the Plugin File",
+        "create-the-plugin-file": "Create the Plugin File",
         "2-register-the-plugin-in-site-json": "2. Register the Plugin in site.json",
-        "3-create-customviews-config-json": "3. Create customviews.config.json",
-        "4-verify-installation": "4. Verify Installation",
-        "example-usage-in-markbind-pages": "Example Usage in MarkBind Pages"
+        "3-create-customviews-config-json": "3. Create customviews.config.json"
+      },
+      "headingKeywords": {}
+    },
+    {
+      "src": "devGuide/componentWorkings.md",
+      "title": "Developer Guide - Components",
+      "headings": {
+        "how-do-the-components-work-rough-explanation": "How do the components work (rough explanation)",
+        "placeholders": "Placeholders"
       },
       "headingKeywords": {}
     },
@@ -218,10 +230,11 @@
       "headings": {
         "release-workflow": "Release Workflow",
         "prerequisites": "Prerequisites",
-        "1-beta-release-experimental": "1. Beta Release (Experimental)",
+        "beta-release-on-npm-experimental": "Beta Release on NPM (Experimental)",
         "using-the-beta-release": "Using the beta release",
-        "2-production-release-stable": "2. Production Release (Stable)",
-        "using-the-production-release": "Using the production release"
+        "production-release-on-npm-stable": "Production Release on NPM (Stable)",
+        "using-the-production-release": "Using the production release",
+        "making-the-release-on-github": "Making the Release on GitHub"
       },
       "headingKeywords": {}
     },
@@ -234,14 +247,6 @@
         "1-the-overlay-interface": "1. The Overlay Interface",
         "2-robust-deep-linking": "2. Robust Deep Linking",
         "3-url-serialization": "3. URL Serialization"
-      },
-      "headingKeywords": {}
-    },
-    {
-      "src": "devGuide/tests/cvtest.md",
-      "title": "Developer Guide - Tests",
-      "headings": {
-        "tests": "Tests"
       },
       "headingKeywords": {}
     },
@@ -268,6 +273,15 @@
         "local-toggle": "Local Toggle",
         "local-tab-groups": "Local Tab Groups",
         "further-testing": "Further Testing"
+      },
+      "headingKeywords": {}
+    },
+    {
+      "src": "devGuide/tests/placeholders.md",
+      "title": "Developer Guide - Placeholder Tests",
+      "headings": {
+        "placeholder-tests": "Placeholder Tests",
+        "placeholders-from-config-work-with-tabgroup-on-page": "Placeholders from Config work with tabgroup on page:"
       },
       "headingKeywords": {}
     },
